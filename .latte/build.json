@@ -1,0 +1,24 @@
+{
+	"keys": {
+
+	},
+	"build": [
+		{
+			"command": "three",
+			"types": "js",
+			"basic": "../latte_zip/build/latte_zip.js",
+			"files": {
+				
+				"./lib": "latte_xlsx"
+			},
+			"out": "./build/{{version}}/{{name}}.js"
+		},
+		{
+			"command": "mini",
+			"type": "js",
+			"in": ["./build/{{version}}/{{name}}.js"],
+			"out": ["./build/{{name}}.js"]
+		}
+
+	]
+}
